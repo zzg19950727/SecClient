@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/ico">
+        <file>icon/dir_lock.ico</file>
+        <file>icon/dir_unlock.ico</file>
+        <file>icon/next.ico</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>icon/dir_lock.ico</file>
+        <file>icon/dir_unlock.ico</file>
+        <file>icon/file_add.ico</file>
+        <file>icon/file_del.ico</file>
+        <file>icon/folder_del.ico</file>
+        <file>icon/folder_add.ico</file>
+        <file>icon/process_accept.ico</file>
+        <file>icon/process_delete.ico</file>
+    </qresource>
+</RCC>

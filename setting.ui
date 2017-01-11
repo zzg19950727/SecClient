@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SettingWindow</class>
+ <widget class="QMainWindow" name="SettingWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>708</width>
+    <height>486</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>9</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>6</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <property name="leftMargin">
+         <number>9</number>
+        </property>
+        <property name="rightMargin">
+         <number>9</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="pushButton_setting">
+          <property name="text">
+           <string>策略配置</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_mini">
+          <property name="styleSheet">
+           <string notr="true">background-image: url(:/icon/line.ico);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_close">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <property name="leftMargin">
+         <number>9</number>
+        </property>
+        <property name="rightMargin">
+         <number>9</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Path:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="pathlineEdit"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="GoTopushButton">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="icon.qrc">
+            <normaloff>:/ico/icon/next.ico</normaloff>:/ico/icon/next.ico</iconset>
+          </property>
+          <property name="shortcut">
+           <string>Return</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="DirSelectpushButton">
+          <property name="text">
+           <string>选择路径</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <property name="leftMargin">
+         <number>9</number>
+        </property>
+        <property name="rightMargin">
+         <number>9</number>
+        </property>
+        <item>
+         <widget class="QComboBox" name="comboBox_filetype"/>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBox_filter">
+          <property name="editable">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="checkBox_search_all">
+          <property name="text">
+           <string>搜索子文件夹</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="checkBox_select_all">
+          <property name="text">
+           <string>全选</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTableView" name="tableView">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="pushButton_lock_file">
+        <property name="text">
+         <string>加密文件</string>
+        </property>
+        <property name="icon">
+         <iconset resource="icon.qrc">
+          <normaloff>:/icon/file_del.ico</normaloff>:/icon/file_del.ico</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_unlock_file">
+        <property name="text">
+         <string>解密文件</string>
+        </property>
+        <property name="icon">
+         <iconset resource="icon.qrc">
+          <normaloff>:/icon/file_add.ico</normaloff>:/icon/file_add.ico</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_lock_dir">
+        <property name="text">
+         <string>保护文件夹</string>
+        </property>
+        <property name="icon">
+         <iconset resource="icon.qrc">
+          <normaloff>:/icon/folder_add.ico</normaloff>:/icon/folder_add.ico</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_unlock_dir">
+        <property name="text">
+         <string>公开文件夹</string>
+        </property>
+        <property name="icon">
+         <iconset resource="icon.qrc">
+          <normaloff>:/icon/folder_del.ico</normaloff>:/icon/folder_del.ico</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_lock_ext">
+        <property name="text">
+         <string>锁定后缀</string>
+        </property>
+        <property name="icon">
+         <iconset resource="icon.qrc">
+          <normaloff>:/ico/icon/dir_lock.ico</normaloff>:/ico/icon/dir_lock.ico</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_unlock_ext">
+        <property name="text">
+         <string>解锁后缀</string>
+        </property>
+        <property name="icon">
+         <iconset resource="icon.qrc">
+          <normaloff>:/ico/icon/dir_unlock.ico</normaloff>:/ico/icon/dir_unlock.ico</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_add_proc">
+        <property name="text">
+         <string>进程授权</string>
+        </property>
+        <property name="icon">
+         <iconset resource="icon.qrc">
+          <normaloff>:/icon/process_accept.ico</normaloff>:/icon/process_accept.ico</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_del_proc">
+        <property name="text">
+         <string>进程撤销</string>
+        </property>
+        <property name="icon">
+         <iconset resource="icon.qrc">
+          <normaloff>:/icon/process_delete.ico</normaloff>:/icon/process_delete.ico</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <action name="actionunlockFile">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/ico/icon/unlock_file.ico</normaloff>:/ico/icon/unlock_file.ico</iconset>
+   </property>
+   <property name="text">
+    <string>unlockFile</string>
+   </property>
+   <property name="toolTip">
+    <string>解锁文件</string>
+   </property>
+  </action>
+  <action name="actionLockFile">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/ico/icon/lock_file.ico</normaloff>:/ico/icon/lock_file.ico</iconset>
+   </property>
+   <property name="text">
+    <string>lockFile</string>
+   </property>
+   <property name="toolTip">
+    <string>锁定文件</string>
+   </property>
+  </action>
+  <action name="actionUnlockDir">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/ico/icon/dir_unlock.ico</normaloff>:/ico/icon/dir_unlock.ico</iconset>
+   </property>
+   <property name="text">
+    <string>unlockDir</string>
+   </property>
+   <property name="toolTip">
+    <string>解锁文件夹</string>
+   </property>
+  </action>
+  <action name="actionLockDir">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/ico/icon/dir_lock.ico</normaloff>:/ico/icon/dir_lock.ico</iconset>
+   </property>
+   <property name="text">
+    <string>LockDir</string>
+   </property>
+   <property name="toolTip">
+    <string>锁定文件夹</string>
+   </property>
+  </action>
+  <action name="actionLockExt">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/ico/icon/lock_ext.ico</normaloff>:/ico/icon/lock_ext.ico</iconset>
+   </property>
+   <property name="text">
+    <string>LockExt</string>
+   </property>
+   <property name="toolTip">
+    <string>锁定指定的文件后缀</string>
+   </property>
+  </action>
+  <action name="actionUnlockExt">
+   <property name="icon">
+    <iconset resource="icon.qrc">
+     <normaloff>:/ico/icon/unlock_ext.ico</normaloff>:/ico/icon/unlock_ext.ico</iconset>
+   </property>
+   <property name="text">
+    <string>UnlockExt</string>
+   </property>
+   <property name="toolTip">
+    <string>解锁指定的文件后缀</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>
